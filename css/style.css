@@ -18,9 +18,9 @@
         box-sizing: border-box;} 
         /*Theme*/
 :root{
-    --color-primary:#3e8ea7;
+    --color-primary:#0b2a3334;
     --color-secondary: #ffffff;
-    --color-main: #ffffff;
+    --color-main: #ffffff3a;
     --color-text: #ffffff;
 
     }
@@ -45,11 +45,11 @@
 
 .nav a:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #00000038;
 }
 
 .nav a.active {
-    background-color: #000000;
+    background-color: #0000003f;
     color: #ffffff;
 }
 header h1 {
@@ -58,6 +58,7 @@ header h1 {
     padding-bottom: 1.4rem;
     padding-right: 5rem;
     margin-bottom: 0.1rem;
+    margin-top: -2rem;
 }
 header h1, section h2{
     line-height: 3.5rem;
@@ -73,6 +74,8 @@ header h1, section h2{
 section h2{
     padding-left: 1.0rem;
     margin-bottom: 2rem;
+    box-shadow: 0 0 1.0rem rgba(5, 42, 255, 0.527);
+
 }
 
 header img{
@@ -95,12 +98,22 @@ main ul li{
     width: calc(100% / 4 - 1rem);
     align-items: center;
 }
+main ul {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+main p{
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
 footer{ 
     margin:0 auto; 
     margin-top: 10rem;
     width:700px; 
     display: block; 
     text-align: center; 
+    box-shadow: 0 0 1.0rem rgba(5, 42, 255, 0.527);
+
 }
 footer h2{
     text-align: center;
@@ -108,7 +121,6 @@ footer h2{
 main,footer{
     max-width: 120.0rem;
     background-color: var(--color-main);
-    box-shadow: 0 0 1.0rem rgba(5, 42, 255, 0.527);
     padding: 1rem;
     text-align: center;
 }
@@ -119,3 +131,48 @@ section h2 ul li{
 text-align: center;
 }
 
+@media screen and (max-width: 40em) {
+    main, footer {
+        margin: 0;
+        width:  auto;
+    }
+    main section h2{
+        margin: 0;
+    }
+    div{
+        display: grid;
+        column-gap: 20px;
+    }
+
+    nav ul{
+        width: auto;
+        margin: 0;
+        display: block;
+
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1;
+    }
+}
+body{
+    background-image: url("../asset/R\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape){
+    nav ul{
+        margin: 0 auto 2rem;
+
+    }
+    nav ul li{
+        width: calc(100% / 5);
+    }
+
+}
