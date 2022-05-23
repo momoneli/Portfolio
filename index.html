@@ -6,62 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mon e-Portfolio">
     <title>Mon e-Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="icon" type="image/jpg" sizes="40x40" href="./favicon/icon.jpg">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-             
-                  <img src="./asset/48019.png" alt="logo Portfolio">
-              
-                  <h1>Developpeuse front spécialisée javascript</h1>
+    <header class="header" id="header">
+        <div class="header_title">
+            <img src="./asset/48019.png" alt="logo Portfolio">
+                      
+                          <h1>Developpeuse front spécialisée javascript</h1>
+        </div>
+        <div class="nav_container">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Moneli AGAMAKA</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#Compétences" class="nav_link active-link">
+                            <i class="fa-solid fa-house nav_icon" ></i> Compétences
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Logiciels" class="nav_link">
+                            <i class="fa-solid fa-laptop nav_icon"></i> Logiciels IDE
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Expériences" class="nav_link">
+                            <i class="fa-solid fa-briefcase nav_icon"></i> Expériences
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Etudes" class="nav_link">
+                            <i class="fa-regular fa-images nav_icon"></i> Etudes
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Loisirs" class="nav_link">
+                            <i class="fa-solid fa-message nav_icon"></i> Loisirs
+                        </a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-xmark nav_close" id="nav-close"></i>
+            </div>
+	<div class="nav_btns">
+		<div class="nav_toggle" id="nav-toggle">
+                    		<i class="fa-solid fa-bars"></i>
+                	</div>
+	</div>
+</nav>
+</div>
+
     </header>
 
-    <nav class="nav">
-        <a href="#Compétences">Compétences</a>
-        <a href="#Logiciels">Logiciels IDE</a>
-        <a href="#Expériences">Expériences</a>
-        <a href="#Etudes">Etudes</a>
-        <a href="#Loisirs">Loisirs</a>
-                               
-                           
-       
-               
-    </nav>
         <main>
-            <section>
-                <h2 id="Compétences">  Mes Compétences </h2>
+            <section  id="Compétences" class="section">
+                <h2>  Mes Compétences </h2>
                 
                    <p>La plupart de mes compétences je les ai developper en auto didacte c'est-a-dire par moi même,
                        sur internet grâce à des sites comme Openclassroms. J'ai la capacité de concevoir des sites internet
                        avec l'utilisation de certains logiciels. </p>
             </section>
-            <section class="section-log">
-                <h2 id="Logiciels"> Logiciels IDE </h2>
-                <ul>
+            <section id="Logiciels" class="section section-log">
+                <h2> Logiciels IDE </h2>
                 
-                    <li><img class="logo" src="./asset/icons8-html-5-48.png" alt="logo html"></li>
+                    <ul class="log_content">
+                    <li><img class="logo" src="./asset/html.png" alt="logo html"></li>
                
-                    <li><img class="logo" src="./asset/icons8-css3-48.png" alt="logo css"></li>
+                    <li><img class="logo" src="./asset/css.png" alt="logo css"></li>
                 
-                    <li><img class="logo" src="./asset/icons8-javascript-48.png" alt="logo js"></li>
+                    <li><img class="logo" src="./asset/js.png" alt="logo js"></li>
                 
                     <li><img class="logo" src="./asset/icons8-sql-60.png" alt="logo sql"></li>
-                
-
                 </ul>
                 
+                
+                
             </section>
-          <section class="section-exp">
-              <h2 id="Expériences">Mon Expérience</h2>
+          <section id="Expériences" class="section section-exp">
+              <h2>Mon Expérience</h2>
             <ul>
                 <li>Computing and IT - (first year) Angleterre, Birmigham</li>
                  <li>South & City Bournville College/University  2020-2021 </li>
             </ul>
            </section>
-          <section class="section-study">
-              <h2 id="Etudes">Mes Etudes</h2>
+          <section  id="Etudes" class="section section-study">
+              <h2>Mes Etudes</h2>
               <ul>
                      <li>1°er année BTS SIO <br>
                     2021-2022 </li>
@@ -72,8 +105,8 @@
                   
               </ul>
           </section>
-                     <section class="section-footer">
-                          <h2 id="Loisirs">Mes Loisirs</h2>
+                     <section id="Loisirs" class="section section-footer">
+                          <h2>Mes Loisirs</h2>
                           <p> Football / Boxe / Voyager / Ecouter de la musique</p>
 
                     </section>
@@ -82,6 +115,9 @@
     <footer>
           <h5> &copy; Portfolio - IT - 2021 </h5>
     </footer>
-    
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up scrollup_icon" title="Icône Scroll-Up"></i>
+    </a>
+    <script src="./js/script.js"></script>
 </body>
 </html>
