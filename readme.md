@@ -1,2 +1,2 @@
-Voici mon site web, voici
-[mon portfolio !](https://momoneli.github.io/Portfolio/)
+Mon site web
+[ici](https://momoneli.github.io/Portfolio/)
