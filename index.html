@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mon e-Portfolio">
     <title>Mon e-Portfolio</title>
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="icon" type="image/jpg" sizes="40x40" href="./favicon/icon.jpg">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -25,8 +27,8 @@
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
                     <li class="nav_item">
-                        <a href="#Compétences" class="nav_link active-link">
-                            <i class="fa-solid fa-house nav_icon" ></i> Compétences
+                        <a href="#Apropos" class="nav_link active-link">
+                            <i class="fa-solid fa-circle-info nav_icon" ></i> À propos
                         </a>
                     </li>
                     <li class="nav_item">
@@ -41,12 +43,12 @@
                     </li>
                     <li class="nav_item">
                         <a href="#Etudes" class="nav_link">
-                            <i class="fa-regular fa-images nav_icon"></i> Etudes
+                            <i class="fa-solid fa-graduation-cap nav_icon"></i> Études
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#Loisirs" class="nav_link">
-                            <i class="fa-solid fa-message nav_icon"></i> Loisirs
+                            <i class="fa-solid fa-football nav_icon"></i> Loisirs
                         </a>
                     </li>
                 </ul>
@@ -63,10 +65,10 @@
     </header>
 
         <main>
-            <section  id="Compétences" class="section">
-                <h2>  A propos de moi ... </h2>
+            <section  id="Apropos" class="section">
+                <h2>  À propos de moi... </h2>
                 
-                   <p>La plupart de mes compétences je les ai developper en auto didacte c'est-a-dire par moi même,
+                   <p class="container section_container">La plupart de mes compétences je les ai developper en auto didacte c'est-a-dire par moi même,
                        sur internet grâce à des sites comme Openclassroms. J'ai la capacité de concevoir des sites internet
                        avec l'utilisation de certains logiciels. Je suis passionné par les nouvelles technologies, les
                        ordinateurs, la téléphonie et par le monde informatique en
@@ -78,64 +80,68 @@
                        hardware... En conséquence, je souhaite maintenant me
                        professionnaliser rapidement dans ce domaine afin d'en faire
                        mon métier, afin de capitaliser les connaissances théoriques
-                       acquises et les compléter par des compétences pratiques </p>
+                       acquises et les compléter par des compétences pratiques. </p>
             </section>
-            <section id="Logiciels" class="section section-log">
+            <section id="Logiciels" class="section">
                 <h2> Logiciels IDE </h2>
-                
-                    <ul class="log_content">
-                    <li><img class="logo" src="./asset/html.png" alt="logo html"></li>
-               
-                    <li><img class="logo" src="./asset/css.png" alt="logo css"></li>
-                
-                    <li><img class="logo" src="./asset/js.png" alt="logo js"></li>
-                
-                    <li><img class="logo" src="./asset/icons8-sql-60.png" alt="logo sql"></li>
-                </ul>
-                
+                    <div class="container section_container">
+                        <ul class="log_content">
+                            <li><img class="logo" src="./asset/html.png" alt="logo html"></li>
+                    
+                            <li><img class="logo" src="./asset/css.png" alt="logo css"></li>
+                        
+                            <li><img class="logo" src="./asset/js.png" alt="logo js"></li>
+                        </ul>
+                    </div>
                 
                 
             </section>
           <section id="Expériences" class="section section-exp">
               <h2>Mon Expérience</h2>
-            <ul>
-                <li>STAGE IT HELPDESK</li>
-                <li>- Onboarding et outboarding d'utilisateur</li>
-                <li>- Administration d'organisation Office 365</li>
-                <li>- le maintien en Condition Opérationnelle du parc
-                    informatique (postes de travail,
-                    serveurs, routeur, support de sauvegarde)</li>
-                <li>- le support aux utilisateurs</li>
-                <li>- le maintien, supervision et sécurisation des
-                    sauvegardes</li>
-                <li>- mise en place et utilisation d'un outil de gestion de
-                    parc informatique</li>
-                <li>- la configuration et le support du matériel à intégrer
-                    au réseau (PC, Switch,
-                    routeur; imprimantes... etc.</li>
-                <li>- Définition des projets d'extension, de modification
-                    du réseau</li>
-                <li>- la mise en place et contrôle des procédures (de
-                    sécurité, de sauvegarde</li>
-                <li>- la supervision des serveurs et des réseaux</li>
-            </ul>
+              <div class="container section_container">
+                      <p>STAGE IT HELPDESK <br>
+                        - Onboarding et outboarding d'utilisateur <br>
+                        - Administration d'organisation Office 365 <br>
+                        - le maintien en Condition Opérationnelle du parc informatique (postes de travail, serveurs, routeur, support de sauvegarde) <br>
+                        - le support aux utilisateurs <br>
+                        - le maintien, supervision et sécurisation des sauvegardes <br>
+                        - mise en place et utilisation d'un outil de gestion de parc informatique <br>
+                        - la configuration et le support du matériel à intégrer au réseau (PC, Switch, routeur; imprimantes... <br>
+                        - Définition des projets d'extension, de modification du réseau <br>
+                        - la mise en place et contrôle des procédures de sécurité et de sauvegarde <br>
+                        - la supervision des serveurs et des réseaux.</p>
+            </div>
            </section>
           <section  id="Etudes" class="section section-study">
-              <h2>Mes Etudes</h2>
+              <h2>Mes Études</h2>
+              <div class="container section_container">
               <ul>
-                     <li>1°er année BTS SIO <br>
-                    2021-2022 </li>
-                     <li>Entry 3 English/Maths/IT <br>
-                    2020-2021</li>
-                     <li> BAC S <br>
-                     2020-2021 </li>
-                  
+                    <li><p>BAC S <br>
+                        2020-2021</p></li>
+                     <li><p>Entry 3 English/Maths/IT <br>
+                    2020-2021</p></li>
+                    <li><p>1°er année BTS SIO <br>
+                        2021-2022</p></li>
+                     
               </ul>
+            </div>
           </section>
                      <section id="Loisirs" class="section section-footer">
                           <h2>Mes Loisirs</h2>
-                          <p> Football  Ecrire  Lire  Photographie </p>
-
+                          <div class="loisirs_content">
+                            <div class="loisirs_box">
+                               <i class="fa-solid fa-futbol"><br> Football</i>
+                            </div>
+                            <div class="loisirs_box">
+                               <i class="fa-solid fa-pen-nib"><br> Ecrire</i>
+                            </div>
+                            <div class="loisirs_box">
+                               <i class="fa-solid fa-book"><br> Lire</i>
+                            </div>
+                            <div class="loisirs_box">
+                               <i class="fa-solid fa-camera-retro"><br> Photographie</i>
+                            </div>
+                        </div>
                     </section>
         
         </main>
